@@ -1,0 +1,33 @@
+import random
+
+def guess_the_number():
+    # Computer picks a random number between 1 and 100
+    number = random.randint(1, 100)
+    attempts = 0
+    guess = 0
+
+    print("Welcome to 'Guess the Number'!")
+    print("I have picked a number between 1 and 100. Try to guess it.")
+
+    # Game loop: continues until the player guesses correctly
+    while guess != number:
+        try:
+            # Get user input
+            user_input = input("Enter your guess: ")
+            guess = int(user_input)
+            attempts += 1
+
+            # Check the guess
+            if guess < number:
+                print("Too low! Try again.")
+            elif guess > number:
+                print("Too high! Try again.")
+            else:
+                print(f"Congratulations! You guessed the number in {attempts} attempts.")
+
+        except ValueError:
+            print("Invalid input. Please enter a whole number.")
+
+if __name__ == "__main__":
+    guess_the_number()
+
