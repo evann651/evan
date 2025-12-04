@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Video Site - Video Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MyTube Clone</div>
+        <input type="search" placeholder="Search">
+        <div class="user-area">Upload | Sign In</div>
+    </header>
+
+    <main>
+        <section class="video-container">
+            <!-- Placeholder for actual video player component -->
+            <div class="video-player">
+                <video controls width="100%" height="auto">
+                    <source src="your_video_file.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-info">
+                <h1>This Is A Video Title</h1>
+                <p class="channel-name">Channel Name | 1.2M Views</p>
+                <p class="description">A short description of the video goes here.</p>
+            </div>
+            <div class="comments-section">
+                <h2>Comments (543)</h2>
+                <!-- Comments would be loaded here dynamically -->
+                <div class="comment">Great video!</div>
+                <div class="comment">Thanks for sharing.</div>
+            </div>
+        </section>
+
+        <aside class="sidebar">
+            <h2>Up Next</h2>
+            <!-- Related videos would be listed here -->
+            <div class="related-video">Related Video 1 Title</div>
+            <div class="related-video">Related Video 2 Title</div>
+            <div class="related-video">Related Video 3 Title</div>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
